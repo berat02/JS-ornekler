@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.input-panel{
+    margin:0px auto;
+    width: 40%;
+    height: 180px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+}
+.input-panel span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.input-panel input{
+    width: 90%;
+    height: 30px;
+    border:none;
+    border-radius: 3px;
+}
+.input-panel button{
+    width: 90%;
+    height: 40px;
+    border:none;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+}
+h2{
+    text-align: center;
+}

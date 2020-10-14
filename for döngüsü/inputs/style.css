@@ -1,0 +1,10 @@
+.input-panel{
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(12, 182, 168);
+}

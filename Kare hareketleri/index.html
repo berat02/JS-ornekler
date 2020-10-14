@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <table border="10">
+      <tr>
+        <td>Yükseklik :</td>
+        <td><input type="number" id="yukseklik"/></td>
+      </tr>
+      <tr>
+        <td>Genişlik :</td>
+        <td><input type="number" id="genislik"/></td>
+      </tr>
+      <tr>
+        <td>Arka Plan Rengi :</td>
+        <td><input type="text"  id="renk"/></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="yap()">Oluştur</button></td>
+      </tr>
+    </table>
+    <div id="olustur"></div>
+
+    <script>
+        function yap() {
+          var yukseklik = Number(document.getElementById("yukseklik").value);
+          var genislik = Number(document.getElementById("genislik").value);
+          var renk = document.getElementById("renk").value;
+  
+          document.getElementById("olustur").style.width = yukseklik + "px";
+          document.getElementById("olustur").style.height = genislik + "px";
+          document.getElementById("olustur").style.backgroundColor = renk;
+        }
+      </script>
+  </body>
+</html>

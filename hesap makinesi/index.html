@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-panel">
+      <input id="sayi1" type="number" />
+      <input id="sayi2" type="number" />
+      <div class="button-panel">
+        <button onclick="toplama()">+</button>
+        <button onclick="cıkarma()">-</button>
+        <button onclick="carpma()">*</button>
+        <button onclick="bolme()">/</button>
+      </div>
+      <input id="sonuc" type="text" disabled />
+    </div>
+    <script>
+      function toplama() {
+        s1 = Number(document.getElementById("sayi1").value);
+        s2 = Number(document.getElementById("sayi2").value);
+        sonuc.value = s1 +s2;
+      }
+      function cıkarma() {
+        s1 = Number(document.getElementById("sayi1").value);
+        s2 = Number(document.getElementById("sayi2").value);
+        sonuc.value = s1 -s2;
+      }
+      function carpma() {
+        s1 = Number(document.getElementById("sayi1").value);
+        s2 = Number(document.getElementById("sayi2").value);
+        sonuc.value = s1 * s2;
+      }
+      function bolme() {
+        s1 = Number(document.getElementById("sayi1").value);
+        s2 = Number(document.getElementById("sayi2").value);
+        sonuc.value =s1 / s2;
+      }
+    </script>
+  </body>
+</html>

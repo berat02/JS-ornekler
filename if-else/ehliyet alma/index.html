@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-panel">
+      <span>Ehliyet Sorgulama</span>
+      <input id="sayi" type="text" placeholder="YAŞ GİRİNİZ ! 😡" />
+      <button onclick="hesapla()">Hesapla</button>
+    </div>
+    <script>
+      var sayi = document.getElementById("sayi");
+
+      function hesapla() {
+        if (sayi.value >= 18 && sayi.value <= 110) {
+          alert("Ehliyet Alabilirsiniz");
+        } else if (sayi.value > 110) {
+          alert("Bu Yaşta Ne Ehliyeti");
+        } else {
+          alert(
+            "Ehliyet Alamazsınız Ancak " +
+              (18 - sayi.value) +
+              " Yıl Sonra Alabilirsiniz."
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sayilar-panel">
+      <div class="sayilar tam-sayilar">
+        <h3>TAM SAYILAR</h3>
+        <hr />
+        <p id="tam-sayi-yaz"></p>
+      </div>
+      <div class="sayilar cift-sayilar">
+        <h3>ÇİFT SAYILAR</h3>
+        <hr />
+        <p id="cift-sayi-yaz"></p>
+      </div>
+      <div class="sayilar tek-sayilar">
+        <h3>TEK SAYILAR</h3>
+        <hr />
+        <p id="tek-sayi-yaz"></p>
+      </div>
+    </div>
+    <script>
+      var yaz = "";
+      for (var i = 0; i < 50; i++) {
+        yaz += i + "<br>";
+      }
+      document.getElementById("tam-sayi-yaz").innerHTML = yaz;
+
+      var yaz = "";
+      for (var i = 0; i <= 100; i++) {
+        if (i % 2 == 0) {
+          yaz += i + "<br>";
+        }
+      }
+      document.getElementById("cift-sayi-yaz").innerHTML = yaz;
+
+      var yaz = "";
+      for (var i = 1; i <= 99; i++) {
+        if (i % 2 != 0) {
+          yaz += i + "<br>";
+        }
+      }
+      document.getElementById("tek-sayi-yaz").innerHTML = yaz;
+    </script>
+  </body>
+</html>

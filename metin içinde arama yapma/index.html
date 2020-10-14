@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <p id="paragraph">Emircan İnci</p>
+    <button onclick="Search()">Find</button>
+    <p id="demo"></p>
+    <script>
+      function Search() {
+        var string = document.getElementById("paragraph").innerHTML;
+        var location = string.search("c");
+        document.getElementById("demo").innerHTML = location;
+      }
+    </script>
+  </body>
+</html>

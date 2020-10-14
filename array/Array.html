@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <script>
+         var dizi=["a","b","c","d","e","f","g"];
+         dizi.pop(); //dizinin son elemanını siler
+         dizi.shift(); //dizinin ilk elemanını siler
+         dizi.push("z") //dizinin sonuna eleman ekler
+         dizi.unshift(1) //dizinin basına eleman ekler
+         dizi.splice(1,1) // dizide 1den sonra 1 tane sildi(dizi arası siler)
+         dizi.reverse() // diziyi ters çevirir
+         dizi.sort() // diziyi sıralar
+         document.getElementById("demo").innerHTML=dizi
+    </script>
+  </body>
+</html>

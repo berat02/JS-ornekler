@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-panel">
+      <span>Ay Bulma</span>
+      <input id="sayi" type="number" placeholder="Lütfen Sayı Giriniz !" />
+      <button onclick="ay_bul()">Submit</button>
+    </div>
+    <h2 id="sonuc"></h2>
+    <script>
+      var sayi = document.getElementById("sayi");
+      var sonuc = document.getElementById("sonuc");
+
+      function ay_bul() {
+        if (sayi.value == "") {
+          sonuc.innerHTML = "1-12 Arasında Bir Sayı Girmelisiniz.☺";
+        } else if (sayi.value == 1) {
+          sonuc.innerHTML = "Ocak";
+        } else if (sayi.value == 2) {
+          sonuc.innerHTML = "Şubat";
+        } else if (sayi.value == 3) {
+          sonuc.innerHTML = "Mart";
+        } else if (sayi.value == 4) {
+          sonuc.innerHTML = "Nisan";
+        } else if (sayi.value == 5) {
+          sonuc.innerHTML = "Mayıs";
+        } else if (sayi.value == 6) {
+          sonuc.innerHTML = "Haziran";
+        } else if (sayi.value == 7) {
+          sonuc.innerHTML = "Temmuz";
+        } else if (sayi.value == 8) {
+          sonuc.innerHTML = "Ağustos";
+        } else if (sayi.value == 9) {
+          sonuc.innerHTML = "Eylül";
+        } else if (sayi.value == 10) {
+          sonuc.innerHTML = "Ekim";
+        } else if (sayi.value == 11) {
+          sonuc.innerHTML = "Kasım";
+        } else if (sayi.value == 12) {
+          sonuc.innerHTML = "Aralık";
+        } else {
+          sonuc.innerHTML = "Saçma Sayılar Girme";
+        }
+      }
+    </script>
+  </body>
+</html>

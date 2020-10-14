@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <input type="text" id="short" placeholder="Kısa Kenarı Girin." />
+    <input type="text" id="long" placeholder="Uzun Kenarı Girin." />
+    <input type="button" value="Calculate" id="calculate" />
+    <script>
+      function calculate() {
+        var se = document.getElementById("short").value; //kısa kenar
+        var le = document.getElementById("long").value; //uzun kenar
+        se = Number(se);
+        le = Number(le);
+        var area = se * le; //alan
+        var perimeter = (se + le) * 2; //çevre
+        alert(
+          "Dikdörtgenin alanı : " +
+            area +
+            " \n Dikdörtgen çevresi : " +
+            perimeter
+        );
+      }
+      var calculateBtn = document.getElementById("calculate");
+      calculateBtn.onclick = calculate;
+    </script>
+  </body>
+</html>

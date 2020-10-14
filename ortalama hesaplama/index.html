@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend id="legend"></legend>
+      <table border="10">
+        <tr>
+          <td>Öğrenci</td>
+          <td>Y1</td>
+          <td>Y2</td>
+          <td>P1</td>
+          <td>P2</td>
+          <td>Ort</td>
+        </tr>
+        <tr>
+          <td>Not Giriniz</td>
+          <td><input type="text" id="y1" /></td>
+          <td><input type="text" id="y2" /></td>
+          <td><input type="text" id="p1" /></td>
+          <td><input type="text" id="p2" /></td>
+          <td><input type="text" id="sonuc" disabled /></td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <button onclick="hesapla()">Hesapla</button>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <script>
+      var promptEl = prompt("Öğrenci Adı");
+      document.getElementById("legend").innerHTML = promptEl;
+
+      function hesapla() {
+        var y1 = Number(document.getElementById("y1").value);
+        var y2 = Number(document.getElementById("y2").value);
+        var p1 = Number(document.getElementById("p1").value);
+        var p2 = Number(document.getElementById("p2").value);
+
+        var toplam = (y1 + y2 + p1 + p2) / 4;
+        document.getElementById("sonuc").value = toplam;
+
+        if (toplam >= 50) {
+          document.getElementById("sonuc").style.backgroundColor = "green";
+          document.getElementById("sonuc").style.color = "white";
+        } else {
+          document.getElementById("sonuc").style.backgroundColor = "red";
+          document.getElementById("sonuc").style.color = "white";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input_panel">
+      <input id="sayi1" type="text" placeholder="1.Sayıyı Giriniz." />
+      <input id="sayi2" type="text" placeholder="2.Sayıyı Giriniz" />
+      <button onclick="hesapla()">Hesapla</button>
+      <span id="sonuc">Sonuç</span>
+    </div>
+    <script>
+      function hesapla() {
+        var s1 = Number(document.getElementById("sayi1").value);
+        var s2 = Number(document.getElementById("sayi2").value);
+        var sonuc = document.getElementById("sonuc");
+        if (s1 > s2) {
+          sonuc.innerHTML = s1;
+        } else if (s2 > s1) {
+          sonuc.innerHTML = s2;
+        } else {
+          sonuc.innerHTML = "eşit";
+        }
+      }
+    </script>
+  </body>
+</html>

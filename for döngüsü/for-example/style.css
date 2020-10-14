@@ -1,0 +1,32 @@
+.sayilar-panel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sayilar{
+    width: 320px;
+    height: auto;
+    text-align: center;
+}
+.tam-sayilar{
+    background-color: rgb(185, 187, 255);
+    border:2px solid blue;
+}
+.cift-sayilar{
+    background-color: rgb(130, 255, 130);
+    border:2px solid green;
+}
+.tek-sayilar{
+    background-color: rgb(255, 159, 159);
+    border:2px solid red;
+}
+.tam-sayilar hr{
+    border-color: blue;
+}
+.cift-sayilar hr{
+    border-color: green;
+}
+.tek-sayilar hr{
+    border-color: red;
+}

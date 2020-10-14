@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <button onclick="siralamaAlfabetik()">Alfabetik Sırala</button>
+    <button onclick="siralamaNumara()">Numara Sırala</button>
+    <p id="demo"></p>
+    <script>
+      var sayilar = [25, 9, 12, 33, 87, 1, 42];
+      document.getElementById("demo").innerHTML=sayilar;
+      function siralamaAlfabetik(){
+          sayilar.sort();
+          document.getElementById("demo").innerHTML=sayilar;
+      }
+      function siralamaNumara(){
+          sayilar.sort(function(a,b){return a-b});
+          document.getElementById("demo").innerHTML=sayilar;
+      }
+    </script>
+  </body>
+</html>

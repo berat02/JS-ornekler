@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="input-panel">
+        <input id="ad" type="text" placeholder="Ad" />
+        <input id="soyad" type="text" placeholder="Soyad" />
+        <input id="sifre" type="password" placeholder="Şifre" />
+        <button onclick="ekle()">Giriş</button>
+      </div>
+    </form>
+
+    <script>
+      function ekle() {
+        var ad = document.getElementById("ad");
+        var soyad = document.getElementById("soyad");
+        var şifre = document.getElementById("sifre");
+
+        if ((ad.value == "berat" &&soyad.value == "yıldırım" &&sifre.value == "123") ||
+            (ad.value == "emircan" &&soyad.value == "inci" &&sifre.value == "123")) {
+
+          alert("giriş başarılı");
+        }
+        else if(ad.value == "" || soyad.value == "" || sifre.value == ""){
+            alert("değer gir")
+        } 
+
+        else {
+          alert("hatalı giriş yaptınız");
+        }
+      }
+    </script>
+  </body>
+</html>

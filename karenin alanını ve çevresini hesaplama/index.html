@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <input type="text" id="edge" placeholder="Kenarı Giriniz." />
+    <input type="button" value="Calculate" id="calculate" />
+    <script>
+      function calculate() {
+        var sayi = document.getElementById("edge").value;
+        sayi = Number(sayi);
+        var area = sayi * sayi;
+        var perimeter = sayi * 4;
+        alert("Karenin alanı : " + area + " \n Karenin çevresi : " + perimeter);
+      }
+      var calculateBtn = document.getElementById("calculate");
+      calculateBtn.onclick = calculate;
+    </script>
+  </body>
+</html>

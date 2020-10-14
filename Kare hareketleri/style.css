@@ -1,0 +1,21 @@
+table {
+  margin: auto;
+  background-color: peru;
+  border-color: peru;
+}
+button {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  outline: none;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+td {
+  font-weight: bold;
+  color: white;
+}
